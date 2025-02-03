@@ -31,34 +31,21 @@ const Profile = () => {
   useEffect(() => {
     const auth = getAuth();
     const currentUser = auth.currentUser;
-    console.log(user);
   
     if (!currentUser) {
       console.error("User is not authenticated.");
       return;
     }
-    else {
-      if (currentUser) {
-        console.log(currentUser.photoURL);
-        currentUser.displayName = currentUser.email.split("@")[0],
-          setUser({
-            name: currentUser.displayName,
-            email: currentUser.email,
-            // profile_pic: currentUser.photoURL,
-          });
-          // uploadToCloudinary(currentUser.photoURL, currentUser.uid)
-        } else {
-          currentUser.displayName = currentUser.email.split("@")[0],
-          setUser({
-            name: currentUser.displayName,
-            email: currentUser.email,
-            // profile_pic: currentUser.photoURL,
-          });
-        }
-      }
-  }, []);
-
   
+    currentUser.displayName = currentUser.email.split("@")[0];
+  
+    setUser({
+      name: currentUser.displayName,
+      email: currentUser.email,
+      // profile_pic: currentUser.photoURL,
+    });
+  
+  }, [setUser]); // Ensure dependencies are properly handled
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
