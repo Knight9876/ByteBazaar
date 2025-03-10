@@ -17,7 +17,7 @@ const SignUpLogIn = () => {
   
   const location = useLocation();
   const fromLocation = location.state?.from || "/"; // Default to home if no previous location
-  console.log(fromLocation);
+  
   
   const toggleForm = () => {
     setIsLogin((prev) => !prev);

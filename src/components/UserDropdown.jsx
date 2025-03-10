@@ -29,7 +29,7 @@ const UserDropdown = () => {
   const handleLogout = async () => {
     try {
       await signOut(auth); // Logs out the user
-      console.log("User logged out");
+      
       navigate("/login"); // Redirect to login page
     } catch (error) {
       console.error("Error logging out:", error.message);

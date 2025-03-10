@@ -41,7 +41,7 @@ const CartDrawer = ({ isOpen, toggleCart }) => {
 
   const confirmRemove = () => {
     removeFromCart(itemToRemove.id);
-    console.log(itemToRemove);
+    
     setShowModal(false);
   };
 
