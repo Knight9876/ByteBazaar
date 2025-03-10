@@ -24,7 +24,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto p-10 mt-24 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg shadow-lg">
+    <div className="max-w-xl mx-auto p-10 mt-24 bg-gradient-to-br from-cyan-400 via-violet-500 to-pink-600 rounded-lg shadow-lg">
       <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center text-white">
         Get in Touch
       </h2>
@@ -79,7 +79,7 @@ const ContactUs = () => {
         </div>
         <button
           type="submit"
-          className="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-3 rounded-lg shadow-lg hover:from-blue-700 hover:to-blue-900 transition duration-300"
+          className="w-full bg-gradient-to-br from-cyan-500 via-violet-600 to-pink-700 text-white py-3 rounded-lg shadow-lg hover:from-cyan-600 hover:via-violet-700 hover:to-pink-800 transition duration-300"
         >
           Send Message
         </button>

@@ -54,7 +54,7 @@ const SignUpLogIn = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-8 mt-24 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg shadow-lg">
+    <div className="max-w-md mx-auto p-8 mt-24 bg-gradient-to-br from-cyan-400 via-violet-500 to-pink-600 rounded-lg shadow-lg">
       <h2 className="text-3xl font-bold text-white text-center mb-6">
         {isLogin ? "Login" : "Sign Up"}
       </h2>
@@ -71,7 +71,7 @@ const SignUpLogIn = () => {
       <div className="mt-6 text-center">
         <button
           onClick={handleGoogleSignIn}
-          className="w-full bg-cyan-200 py-3 rounded-lg flex items-center justify-center gap-2"
+          className="w-full bg-gradient-to-br from-cyan-200 via-violet-300 to-pink-400 border border-black py-3 rounded-lg flex items-center justify-center gap-2 hover:from-cyan-300 hover:via-violet-400 hover:to-pink-500"
         >
           <img
             src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
@@ -87,7 +87,7 @@ const SignUpLogIn = () => {
           onClick={toggleForm}
           className="text-white hover:underline focus:outline-none"
         >
-          {isLogin ? "Create an account" : "Already have an account? Login"}
+          {isLogin ? "Don't have an account?!! Sign Up" : "Already have an account?!! Log In"}
         </button>
       </div>
     </div>

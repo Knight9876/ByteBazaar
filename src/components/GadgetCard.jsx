@@ -1,4 +1,4 @@
-// CigaretteCard.jsx
+// GadgetCard.jsx
 import React from "react";
 import { Link } from "react-router-dom";
 import QuantitySelector from "./QuantitySelector";
@@ -9,37 +9,37 @@ import Tag from "./Tag";
 import Price from "./Price";
 import AddToWishlistButton from "./AddToWishlistButton";
 
-const CigaretteCard = ({
-  cigarette,
+const GadgetCard = ({
+  gadget,
   quantity,
   onQuantityChange,
   onAddToCart,
 }) => (
   <div className="bg-white shadow-md rounded-lg flex flex-col justify-between p-4 hover:shadow-lg transition transform hover:scale-105 duration-300">
-    <Link to={`/products/${cigarette.name}`}>
+    <Link to={`/products/${gadget.name}`}>
       <img
-        src={cigarette.image}
-        alt={cigarette.name}
-        className="w-full h-48 object-cover rounded-t-lg"
+        src={gadget.image}
+        alt={gadget.name}
+        className="w-full h-48 object-contain rounded-t-lg"
       />
       <div className="flex-grow p-4">
-        <h3 className="text-lg font-semibold line-clamp-1">{cigarette.name}</h3>
-        <p className="text-gray-600 italic">{cigarette.type}</p>
-        <p className="text-gray-600 line-clamp-1">{cigarette.description}</p>
+        <h3 className="text-lg font-semibold line-clamp-1">{gadget.name}</h3>
+        <p className="text-gray-600 italic">{gadget.type}</p>
+        <p className="text-gray-600 line-clamp-1">{gadget.description}</p>
         <Price
-          price={cigarette.price}
-          discountedPrice={cigarette.discountedPrice}
+          price={gadget.price}
+          discountedPrice={gadget.discountedPrice}
         />
         <div className="flex items-center gap-2">
-          <Stars rating={cigarette.rating} />
-          <div className="mt-2">({cigarette.rating}/5)</div>
+          <Stars rating={gadget.rating} />
+          <div className="mt-2">({gadget.rating}/5)</div>
         </div>
         <div className="flex flex-col">
           <div className="mt-2">
-            <Availability availability={cigarette.availability} />
+            <Availability availability={gadget.availability} />
           </div>
           <div className="mt-2">
-            <Tag tag={cigarette.tag} />
+            <Tag tag={gadget.tag} />
           </div>
         </div>
       </div>
@@ -54,10 +54,10 @@ const CigaretteCard = ({
             onAddToCart();
           }}
         />
-        <AddToWishlistButton product={cigarette} />
+        <AddToWishlistButton product={gadget} />
       </div>
     </div>
   </div>
 );
 
-export default CigaretteCard;
+export default GadgetCard;

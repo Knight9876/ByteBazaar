@@ -70,7 +70,7 @@ const AuthForm = ({ isLogin, onSubmit }) => {
         )}
         <button
           type="submit"
-          className="w-full bg-gradient-to-r from-blue-600 to-blue-800 text-white py-3 rounded-lg shadow-lg hover:from-blue-700 hover:to-blue-900 transition duration-300"
+          className="w-full bg-gradient-to-br from-cyan-500 via-violet-600 to-pink-700 text-white py-3 rounded-lg shadow-lg hover:from-cyan-600 hover:via-violet-700 hover:to-pink-800 transition duration-300"
         >
           {isLogin ? "Login" : "Sign Up"}
         </button>

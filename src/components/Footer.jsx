@@ -9,15 +9,26 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
           {/* Brand Section */}
           <div>
-            <h2 className="text-lg font-bold">sutta.com</h2>
-            <p className="text-sm">Your one-stop shop for premium cigarettes.</p>
+          <span className="text-lg font-bold bg-gradient-to-r from-pink-600 via-violet-500 to-cyan-400 bg-clip-text text-transparent">
+            <a href="/">ByteBazaar</a>
+          </span>
+          <p className="text-sm">
+          Big on{" "}
+          <span className="bg-gradient-to-r from-pink-600 via-violet-500 to-cyan-400 bg-clip-text text-transparent">
+            Tech
+          </span>
+          , Bigger on{" "}
+          <span className="bg-gradient-to-r from-pink-600 via-violet-500 to-cyan-400 bg-clip-text text-transparent">
+            Bytes!
+          </span>
+        </p>
           </div>
 
           {/* Navigation Links */}
           <div>
             <nav className="flex flex-col gap-2 items-center md:flex-row md:justify-center">
-              <a href="/privacy" className="text-gray-300 hover:text-white mx-2">Privacy Policy</a>
-              <a href="/terms" className="text-gray-300 hover:text-white mx-2">Terms of Service</a>
+              <a href="#" className="text-gray-300 hover:text-white mx-2">Privacy Policy</a>
+              <a href="#" className="text-gray-300 hover:text-white mx-2">Terms of Service</a>
               <a href="/contactus" className="text-gray-300 hover:text-white mx-2">Contact Us</a>
             </nav>
           </div>
@@ -39,8 +50,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="text-center mt-4">
-          <p className="text-sm">© {new Date().getFullYear()} sutta.com. All rights reserved.</p>
-          <p className="text-sm">Contact: support@sutta.com | Phone: (123) 456-7890</p>
+          <p className="text-sm">© {new Date().getFullYear()} ByteBazaar. All rights reserved.</p>
+          <p className="text-sm">Contact: support@ByteBazaar | Phone: (123) 456-7890</p>
         </div>
       </div>
     </footer>

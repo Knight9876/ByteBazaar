@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"; // Import Link for navigation
 import featuredProducts from "../utils/featuredProducts";
 import { useCartContext } from "../context/CartContext";
 import { useWishlistContext } from "../context/WishlistContext";
-import CigaretteCard from "./CigaretteCard";
+import GadgetCard from "./GadgetCard";
 
 const FeaturedProducts = () => {
   const { addToCart } = useCartContext();
@@ -41,8 +41,8 @@ const FeaturedProducts = () => {
               to={`/products/${product.name}`} // Redirect to the product detail page
               className="block" // Ensure it behaves like a block element for full clickable area
             >
-              <CigaretteCard
-                cigarette={product}
+              <GadgetCard
+                gadget={product}
                 quantity={quantities[product.id] || 1} // Pass current quantity or default to 1
                 onQuantityChange={(newQuantity) =>
                   handleQuantityChange(product.id, newQuantity)

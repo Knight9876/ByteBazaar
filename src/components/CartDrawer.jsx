@@ -63,7 +63,7 @@ const CartDrawer = ({ isOpen, toggleCart }) => {
             <FontAwesomeIcon icon={faTimes} />
           </button>
         </div>
-        <div className="p-4 overflow-y-auto scrollbar-none max-h-screen pb-24">
+        <div className="p-4 overflow-y-auto scrollbar-none max-h-screen pb-40">
           {cartItems.length > 0 ? (
             <div>
               {cartItems.map((item) => (
@@ -84,10 +84,10 @@ const CartDrawer = ({ isOpen, toggleCart }) => {
         <div className="absolute bottom-0 left-0 right-0 p-4 bg-white shadow-inner">
           {cartItems.length > 0 && (
             <>
-              <h3 className="font-bold">Total: ${totalPrice.toFixed(2)}</h3>
+              <h3 className="font-bold">Total: ₹{totalPrice.toFixed(2)}</h3>
               <button
                 onClick={handleCheckoutClick}
-                className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 mt-2"
+                className="w-full bg-gradient-to-br from-cyan-400 via-violet-500 to-pink-600 text-white py-2 rounded-lg hover:from-cyan-500 hover:via-violet-600 hover:to-pink-700 mt-2"
               >
                 Checkout
               </button>

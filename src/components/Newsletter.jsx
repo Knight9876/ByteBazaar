@@ -6,7 +6,7 @@ const Newsletter = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h2 className="text-3xl font-bold mb-4">Stay Updated!</h2>
         <p className="text-lg mb-6">
-          Subscribe to our newsletter for the latest updates and exclusive offers from sutta.com.
+          Subscribe to our newsletter for the latest updates and exclusive offers from ByteBazaar.
         </p>
         <form className="flex justify-center">
           <input
@@ -17,7 +17,7 @@ const Newsletter = () => {
           />
           <button
             type="submit"
-            className="bg-blue-600 text-white px-4 py-2 rounded-r-md hover:bg-blue-700 focus:outline-none"
+            className="bg-gradient-to-br from-cyan-400 via-violet-500 to-pink-600 text-white px-4 py-2 rounded-r-md hover:from-cyan-500 hover:via-violet-600 hover:to-pink-700 focus:outline-none"
           >
             Subscribe
           </button>

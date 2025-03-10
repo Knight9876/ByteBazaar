@@ -8,16 +8,16 @@ const MissionAndValues = () => {
           Our Mission & Values
         </h2>
         <p className="text-gray-700 mb-10 text-center">
-          To provide a curated selection of quality products with a commitment
-          to transparency, integrity, and customer satisfaction.
+          Bringing cutting-edge gadgets to tech enthusiasts with a commitment to
+          quality, innovation, transparency, and customer satisfaction.
         </p>
         <div className="flex flex-col md:flex-row justify-around items-center space-y-6 md:space-y-0 md:space-x-6">
           {/* Quality Card */}
           <div className="bg-white shadow-md rounded-lg p-6 w-full md:w-1/4 text-center">
             <h3 className="font-bold text-gray-800 text-xl mb-2">Quality</h3>
             <p className="text-sm text-gray-600">
-              We prioritize high standards in every product we offer, ensuring
-              an unparalleled shopping experience.
+              We curate only the best, ensuring every gadget meets high
+              performance and durability standards.
             </p>
           </div>
           {/* Customer Satisfaction Card */}
@@ -26,8 +26,8 @@ const MissionAndValues = () => {
               Customer Satisfaction
             </h3>
             <p className="text-sm text-gray-600">
-              Our customers are our top priority, and we strive to meet their
-              needs through every interaction.
+              Your experience matters. We focus on seamless service, responsive
+              support, and hassle-free shopping.
             </p>
           </div>
           {/* Transparency Card */}
@@ -36,17 +36,17 @@ const MissionAndValues = () => {
               Transparency
             </h3>
             <p className="text-sm text-gray-600">
-              We believe in clear and open communication, so you know exactly
-              what you're purchasing.
+              No hidden details—just honest product descriptions, fair pricing,
+              and complete specifications.
             </p>
           </div>
           {/* Innovation Card */}
           <div className="bg-white shadow-md rounded-lg p-6 w-full md:w-1/4 text-center">
             <h3 className="font-bold text-gray-800 text-xl mb-2">Innovation</h3>
             <p className="text-sm text-gray-600">
-              Embracing new ideas and approaches to enhance our offerings and
-              improve the customer journey.
-            </p>
+              Always evolving—bringing you the latest trends and advanced
+              technology to enhance your digital lifestyle.
+            </p>{" "}
           </div>
         </div>
       </section>

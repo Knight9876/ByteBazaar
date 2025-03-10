@@ -1,18 +1,28 @@
 const homePageReviews = [
   {
-    text: "sutta.com offers an amazing selection of cigarettes. The quality is top-notch, and I appreciate the fast delivery!",
+    name: "Amit Sharma",
+    text: "This website has an incredible selection of gadgets! The quality is excellent, and the delivery was super fast. Highly recommend!",
+    stars: 5,
   },
   {
-    text: "I've been a regular customer at sutta.com for a year now. Their customer service is fantastic, and I love their product range.",
+    name: "Priya Verma",
+    text: "I've been a regular customer, and their customer service is top-notch. The products are always authentic, and the discounts are great!",
+    stars: 3,
   },
   {
-    text: "Great experience shopping at sutta.com! The site is easy to navigate, and I always find what I'm looking for.",
+    name: "Rahul Mehta",
+    text: "Smooth shopping experience. The website is user-friendly, and the checkout process is seamless. Will definitely shop again.",
+    stars: 4,
   },
   {
-    text: "I highly recommend sutta.com! They have excellent prices and offer quality products. Will definitely order again.",
+    name: "Neha Joshi",
+    text: "Good collection and reasonable prices. However, I wish they had more stock for certain premium gadgets.",
+    stars: 3,
   },
   {
-    text: "Sutta.com has exceeded my expectations! The delivery was fast, and the quality of the products is unmatched. I will definitely be returning!",
+    name: "Vikram Singh",
+    text: "Exceeded my expectations! The product quality is fantastic, and the fast delivery was a big plus. Will recommend to friends!",
+    stars: 5,
   },
 ];
 

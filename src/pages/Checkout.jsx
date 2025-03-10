@@ -148,7 +148,7 @@ const Checkout = () => {
               </div>
               <button
                 onClick={handlePlaceOrder}
-                className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700"
+                className="w-full bg-gradient-to-br from-cyan-400 via-violet-500 to-pink-600 text-white py-3 rounded-lg hover:from-cyan-500 hover:via-violet-600 hover:to-pink-700"
               >
                 Place Order
               </button>

@@ -13,7 +13,7 @@ const ContactCTA = () => {
         </p>
         <a
           href="/contactus"
-          className="block w-full max-w-xs mx-auto px-6 py-3 bg-blue-500 text-white rounded-md text-center hover:bg-blue-600 transition duration-200"
+          className="block w-full max-w-xs mx-auto px-6 py-3 bg-gradient-to-br from-cyan-400 via-violet-500 to-pink-600 text-white rounded-md text-center hover:from-cyan-500 hover:via-violet-600 hover:to-pink-700 transition duration-200"
         >
           Contact Us
         </a>

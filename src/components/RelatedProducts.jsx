@@ -1,12 +1,12 @@
 // src/components/RelatedProducts.jsx
 import React from "react";
-import CigaretteList from "./CigaretteList";
+import GadgetList from "./GadgetList";
 
 const RelatedProducts = ({ relatedProducts, onQuantityChange, onAddToCart }) => (
   <div className="mt-8">
     <h3 className="text-xl font-semibold mb-4 ml-2">Related Products</h3>
-    <CigaretteList
-      cigarettes={relatedProducts}
+    <GadgetList
+      gadgets={relatedProducts}
       onQuantityChange={onQuantityChange}
       onAddToCart={onAddToCart}
     />

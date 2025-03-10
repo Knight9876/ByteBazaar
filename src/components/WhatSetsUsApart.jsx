@@ -8,44 +8,44 @@ const WhatSetsUsApart = () => {
           What Sets Us Apart
         </h2>
         <p className="text-gray-700 mb-10 text-center">
-          At sutta.com, we prioritize quality, transparency, and a superior
-          shopping experience to stand out from the crowd.
+          We bring you the latest in technology with a commitment to quality,
+          innovation, and an effortless shopping experience.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Wide Selection
+              Vast Selection
             </h3>
             <p className="text-sm text-gray-600">
-              Explore a diverse range of premium products curated to meet every
-              preference and taste.
+              Discover a wide range of cutting-edge gadgets, from smartphones to
+              smart accessories.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Customer-Centric
+              Customer-Centric Approach
             </h3>
             <p className="text-sm text-gray-600">
-              Our customers are our top priority, with a support team ready to
-              assist every step of the way.
+              Your satisfaction is our priority, with dedicated support to
+              assist at every step.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Transparent Practices
+              Transparency & Trust
             </h3>
             <p className="text-sm text-gray-600">
-              We believe in full transparency, offering detailed product
-              information for informed choices.
+              Clear product details, honest pricing, and verified reviews for
+              confident shopping.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Innovation
+              Tech Innovation
             </h3>
             <p className="text-sm text-gray-600">
-              Staying ahead with the latest trends and technology to bring you
-              the best shopping experience.
+              Stay ahead with the latest trends, premium gadgets, and next-gen
+              technology.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
@@ -53,17 +53,17 @@ const WhatSetsUsApart = () => {
               Quality Assurance
             </h3>
             <p className="text-sm text-gray-600">
-              We source only the highest quality products to ensure satisfaction
-              and reliability.
+              We handpick every product, ensuring reliability, performance, and
+              top-tier craftsmanship.
             </p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg text-center">
             <h3 className="text-xl font-semibold text-gray-800 mb-2">
-              Fast & Secure Delivery
+              Fast & Secure Shipping
             </h3>
             <p className="text-sm text-gray-600">
-              Quick, secure delivery with options to track your order every step
-              of the way.
+              Enjoy quick, reliable delivery with real-time tracking and secure
+              packaging.
             </p>
           </div>
         </div>

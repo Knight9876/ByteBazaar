@@ -1,53 +1,53 @@
 const FAQ = [
   {
-    question: "What are the health warnings associated with smoking?",
+    question: "What types of gadgets do you sell?",
     answer:
-      "Smoking can cause serious health issues, including lung cancer, heart disease, and respiratory problems. We encourage all smokers to be aware of the risks.",
+      "We offer a wide range of electronics, including smartphones, accessories, audio devices, gaming gadgets, wearables, and more.",
   },
   {
-    question: "What is the return policy?",
+    question: "What is your return policy?",
     answer:
-      "Our return policy allows for returns within 30 days of purchase, provided the product is unopened and in its original packaging.",
+      "Our return policy allows returns within 15 days of purchase, provided the product is unused, in its original packaging, and with all accessories.",
   },
   {
     question: "How can I track my order?",
     answer:
-      "You can track your order using the tracking link provided in your confirmation email or by visiting our website and entering your order number.",
+      "You can track your order using the tracking link in your confirmation email or by visiting our website and entering your order number.",
   },
   {
     question: "Do you offer international shipping?",
     answer:
-      "Yes, we offer international shipping to select countries. Shipping costs may vary based on the destination.",
+      "Yes, we provide international shipping to select countries. Shipping charges and delivery times vary based on the destination.",
   },
   {
     question: "What payment methods do you accept?",
     answer:
-      "We accept major credit cards, PayPal, and Apple Pay for online purchases.",
+      "We accept major credit/debit cards, UPI, Net Banking, PayPal, and EMI options on select products.",
   },
   {
-    question: "How do I contact customer service?",
+    question: "How do I contact customer support?",
     answer:
-      "You can contact our customer service via email at support@sutta.com or call us at 1-800-123-4567.",
+      "You can contact our support team via email at support@yourstore.com or call us at 1-800-123-4567 during business hours.",
   },
   {
-    question: "Can I change my order after placing it?",
+    question: "Can I cancel or modify my order after placing it?",
     answer:
-      "If you need to change your order, please contact us as soon as possible. We can make changes only if the order hasn't been processed yet.",
+      "Orders can only be modified or canceled before they are processed for shipping. Contact us as soon as possible for any changes.",
   },
   {
-    question: "What should I do if I received a damaged product?",
+    question: "What should I do if I receive a defective product?",
     answer:
-      "If you receive a damaged product, please contact us within 48 hours of delivery with your order details and a photo of the damage for a replacement.",
+      "If you receive a defective or damaged product, contact us within 48 hours with your order details and a photo of the issue for a replacement or refund.",
   },
   {
-    question: "Are there any age restrictions for purchasing cigarettes?",
+    question: "Do you offer warranties on products?",
     answer:
-      "Yes, you must be at least 21 years old to purchase cigarettes. We require age verification at the time of checkout.",
+      "Yes, most of our products come with a manufacturer’s warranty. Warranty details can be found on the product page or in the packaging.",
   },
   {
-    question: "Do you have a loyalty program?",
+    question: "Do you have a loyalty or rewards program?",
     answer:
-      "Yes, we have a loyalty program that rewards you with points for every purchase, which can be redeemed for discounts on future orders.",
+      "Yes! Our loyalty program allows you to earn points for every purchase, which can be redeemed for discounts on future orders.",
   },
 ];
 

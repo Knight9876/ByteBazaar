@@ -1,63 +1,55 @@
-import logo from "../assets/logo.webp";
-
-const addRandomDecimal = (price) => {
-  console.log(typeof price);
-  
-  // Randomly choose one of the decimal values
-  const randomDecimal = [".29", ".49", ".59", ".69", ".79", ".99"];
-  const randomIndex = Math.floor(Math.random() * randomDecimal.length);
-  const randomDecimalValue = randomDecimal[randomIndex];
-
-  // Add the random decimal to the price
-  return price + randomDecimalValue;
-};
+import logo from "../assets/hero1.jpeg";
 
 const featuredProducts = [
   {
     id: 1,
-    name: "Gold Flake Kings",
+    name: "iPhone 15 Pro Max",
     description:
-      "A premium full-flavored cigarette from ITC with a smooth and rich taste. Gold Flake Kings offers a well-balanced tobacco blend, ensuring a satisfying smoking experience with a refined aroma and a classic strong finish.",
-    price: addRandomDecimal("309"),
-    discountedPrice: addRandomDecimal("189"),
-    image: "https://mir-s3-cdn-cf.behance.net/projects/404/8787af78277615.Y3JvcCw0MDQsMzE2LDk5NSw2MDk.jpg",
+      "Apple's latest flagship featuring a powerful A17 Bionic chip, a titanium body, and a stunning 120Hz ProMotion display. Experience next-level performance, photography, and battery life with the iPhone 15 Pro Max.",
+    price: 134999,
+    discountedPrice: 129999,
+    image:
+      "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTPh4wc-f4SbbYTPtdwnD1SQ50T_HD7Av4jjWeC-6TI07PMkhpDibUoe8Jqa0-BXN6xGVxmnporw-55QfMVc3SZQOmMvcB73vk_oY9rG_5yf5j_0gh3V19blQ",
     rating: 4,
     availability: Math.floor(Math.random() * 3) - 1,
     tag: 0, // Customer Favourite
   },
+
   {
     id: 2,
-    name: "Rajhans",
+    name: "1MORE Piston Fit",
     description:
-      "A premium organic cigarette from Altria, known for its quality tobacco and smooth flavor. Known for its quality tobacco and smooth flavor, Rajhans offers a premium organic cigarette experience with a smooth flavor. It's a popular choice among smokers who prefer a premium organic cigarette experience.",
-    price: addRandomDecimal("1129"),
-    discountedPrice: addRandomDecimal("759"),
-    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRji7UOyq1dOudjmWtL_MQ1m22nYDMKe95K52XreYoJHYaHaYzXgayIPD8aaup20zgFOrE&usqp=CAU",
-    rating: 3.5,
+      "Stylish and durable earphones with an aluminum body, Hi-Res certified sound, and in-line mic.",
+    price: 1499,
+    image:
+      "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQlMnkpvkrGywy7QR65k3mx-iYkSUh4vnvMA9h8shF6TrrLd7dI6JfE_vqyFKWSNqJC0hiRucoF-yuddOVVr4ol-2rQ6DygqhFkrv1s9-E8",
+    rating: 4.3,
     availability: Math.floor(Math.random() * 3) - 1,
   },
+
   {
     id: 3,
-    name: "Panter Noir",
+    name: "HP Reverb G2",
     description:
-      "Panter Noir offers a sweet and fruity taste with a peach flavor, making it the perfect choice for smokers looking for a refreshing and flavorful experience.",
-    price: addRandomDecimal("549"),
-    discountedPrice: addRandomDecimal("199"),
-    image: "https://smokincigar.com/cdn/shop/products/PanterFull_Nuit_Noir_OG.jpg?v=1625841888",
-    rating: 3.5,
+      "A high-fidelity VR headset designed for simulation and professional use, offering impressive clarity and comfort.",
+    price: 49999,
+    image:
+      "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRVMGrhJ0FqLpR6Rd636V6fWoZKFte4s0BKgqIJTCZmsl7vQJhre3slvTYeomternWaNZnm5uBFO7FpnrrmiFleJRTyRj0hKc8rkW_62QbQ_ViXzpnsKSTEQw",
+    rating: 4.4,
     availability: Math.floor(Math.random() * 3) - 1,
-    tag: -1, // Best Seller
   },
+
   {
     id: 4,
-    name: "The Chancellor by Nat Sherman",
+    name: "Realme 20000mAh Power Bank 2",
     description:
-      "A pinnacle of luxury, The Chancellor is Nat Sherman's most exclusive cigarette, crafted with the finest tobacco and gold leaf accents. Known for its ultra-luxury cigarette, The Chancellor offers an unparalleled smoking experience with a smooth, rich flavor. It's a popular choice among elite smokers who demand the absolute best.",
-    price: addRandomDecimal("43349"),
-    image: "https://upload.wikimedia.org/wikipedia/en/5/58/Nat_Sherman_logo.png",
-    rating: 5,
-    availability: Math.floor(Math.random() * 3) - 1, // -1: Out of Stock, 0: Low Stock, 1: In Stock
-    tag: 1, // Limited Edition
+      "Realme Power Bank 2 features 18W two-way fast charging with USB-A and USB-C output, and a high-density lithium-polymer battery.",
+    price: 2499,
+    discountedPrice: 1999,
+    image:
+      "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTNcpapk8KQweWylKsZX1Ve-k6osNQ-CliOpZFWPxmsSwZKSC-s6Dmt_kN579EByaH_ZN19gTumaMlHNeD7NopUTvx2uhjNhJQqdPqNWA46om_BjbwSTLRS7w",
+    rating: 4.3,
+    availability: Math.floor(Math.random() * 3) - 1,
   },
 ];
 

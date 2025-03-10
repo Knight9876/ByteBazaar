@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import cigaretteData from "../utils/cigaretteData";
+import gadgetData from "../utils/gadgetData";
 import { useCartContext } from "../context/CartContext";
 import SearchAndFilter from "../components/SearchAndFilter";
-import CigaretteCategoryList from "../components/CigaretteCategoryList";
-import { filterCigarettes } from "../utils/FilterLogic";
+import GadgetCategoryList from "../components/GadgetCategoryList";
+import { filterGadgets } from "../utils/FilterLogic";
 import AutocompleteSuggestions from "../components/AutocompleteSuggestions";
 
 const Products = () => {
@@ -12,7 +12,7 @@ const Products = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [selectedRating, setSelectedRating] = useState("all");
   const [quantities, setQuantities] = useState({});
-  const [priceRange, setPriceRange] = useState([100, 45000]);
+  const [priceRange, setPriceRange] = useState([500, 200000]);
   const [suggestions, setSuggestions] = useState([]);
 
   // Handler functions
@@ -20,9 +20,9 @@ const Products = () => {
     setSearchQuery(query);
 
     // Update autocomplete suggestions
-    const filteredNames = filteredCigarettes
-      .flatMap((category) => category.cigarettes)
-      .map((cigarette) => cigarette.name)
+    const filteredNames = filteredGadgets
+      .flatMap((category) => category.gadgets)
+      .map((gadget) => gadget.name)
       .filter((name) => name.toLowerCase().includes(query.toLowerCase()));
 
     setSuggestions(filteredNames);
@@ -50,8 +50,8 @@ const Products = () => {
   };
 
   // Filter logic
-  const filteredCigarettes = filterCigarettes(
-    cigaretteData,
+  const filteredGadgets = filterGadgets(
+    gadgetData,
     searchQuery,
     selectedCategory,
     selectedRating,
@@ -65,7 +65,7 @@ const Products = () => {
         onSearchChange={handleSearchChange}
         selectedCategory={selectedCategory}
         onFilterChange={handleCategoryChange}
-        categories={cigaretteData}
+        categories={gadgetData}
         selectedRating={selectedRating}
         onRatingChange={handleRatingChange}
         priceRange={priceRange}
@@ -79,11 +79,11 @@ const Products = () => {
         onSuggestionClick={handleSuggestionClick}
       />
 
-      <CigaretteCategoryList
-        categories={filteredCigarettes}
+      <GadgetCategoryList
+        categories={filteredGadgets}
         handleQuantityChange={handleQuantityChange}
-        addToCart={(cigarette) =>
-          addToCart({ ...cigarette, quantity: quantities[cigarette.id] || 1 })
+        addToCart={(gadget) =>
+          addToCart({ ...gadget, quantity: quantities[gadget.id] || 1 })
         }
       />
     </div>

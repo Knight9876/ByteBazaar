@@ -7,16 +7,16 @@ import PurchaseOptions from "../components/PurchaseOptions";
 import ProductDetailReviews from "../components/ProductDetailReviews";
 import RelatedProducts from "../components/RelatedProducts";
 import { useCartContext } from "../context/CartContext";
-import cigaretteData from "../utils/cigaretteData";
+import gadgetData from "../utils/gadgetData";
 import ProductNotFound from "../components/ProductNotFound";
 
 const ProductDetail = () => {
   const { productName } = useParams();
   const { addToCart } = useCartContext();
 
-  const product = cigaretteData
-    .flatMap((category) => category.cigarettes)
-    .find((cigarette) => cigarette.name === productName);
+  const product = gadgetData
+    .flatMap((category) => category.gadgets)
+    .find((gadget) => gadget.name === productName);
 
   const [quantity, setQuantity] = useState(1);
 
@@ -32,27 +32,23 @@ const ProductDetail = () => {
 
   // Find related products within the same category except the current product
   const relatedProducts =
-    cigaretteData
+    gadgetData
       .find((category) =>
-        category.cigarettes.some((cigarette) => cigarette.name === product.name)
+        category.gadgets.some((gadget) => gadget.name === product.name)
       )
-      ?.cigarettes.filter((cigarette) => cigarette.name !== product.name) || [];
+      ?.gadgets.filter((gadget) => gadget.name !== product.name) || [];
 
-  const handleQuantityChange = (cigarette, newQuantity) => {
+  const handleQuantityChange = (gadget, newQuantity) => {
     setQuantity(newQuantity);
   };
 
-  const handleRelatedAddToCart = (cigarette) => {
-    addToCart({ ...cigarette, quantity });
+  const handleRelatedAddToCart = (gadget) => {
+    addToCart({ ...gadget, quantity });
   };
 
   return (
     <div className="max-w-7xl mx-auto py-8">
       <div className="text-center mt-16 font-bold text-red-700">
-        <p>
-          This product contains nicotine, a highly addictive substance. Smoking
-          can cause serious health issues. Please consume responsibly.
-        </p>
       </div>
       <div className="max-w-6xl mx-auto px-8 py-8 mb-6 bg-white shadow-lg rounded-lg">
         <div className="flex flex-col lg:flex-row gap-12 items-center">

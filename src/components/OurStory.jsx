@@ -7,36 +7,47 @@ const OurStory = () => {
         Our Journey
       </h2>
       <p className="text-gray-700 mb-6">
-        <span className="font-semibold text-2xl">sutta.com</span> was born from
-        a simple idea and a bold vision: to be more than just a place to buy
-        cigarettes, but a community built on shared experiences. Our roots trace
-        back to late-night conversations, smoke-filled gatherings, and whispered
-        stories exchanged in dimly lit spaces. This isn't merely about selling a
-        product; it's about capturing a lifestyle, a culture.
+        <span className="byte-bazaar bg-gradient-to-r from-pink-600 via-violet-500 to-cyan-400 bg-clip-text font-semibold text-2xl text-transparent">
+            ByteBazaar
+          </span> was born from
+        a simple yet ambitious vision: to create more than just an online store,
+        but a hub for tech enthusiasts seeking cutting-edge innovation. Our
+        journey began with a passion for the latest gadgets, a fascination with
+        emerging technology, and a drive to bring the best electronic devices to
+        those who crave excellence.
       </p>
       <p className="text-gray-700 mb-6">
-        Our founders lived and breathed this world. They recognized a need for a
-        dedicated space where enthusiasts could connect, find high-quality
-        products, and discover a premium experience. From that insight,{" "}
-        <span className="font-semibold text-2xl">sutta.com</span> took shape.
+        Our founders, fueled by their love for technology, saw the need for a
+        dedicated platform where people could explore, compare, and purchase
+        top-tier gadgets effortlessly. They envisioned a space that offers not
+        just premium products, but an experience—one that inspires and enhances
+        everyday life.
       </p>
       <p className="text-gray-700 mb-6">
-        For us, a cigarette is more than just a simple indulgence - it's a
-        ritual. Each product featured on our site is carefully chosen, each
-        detail crafted to enhance that experience. We see our offerings not just
-        as items but as symbols of a choice, an identity, a moment shared.
+        At <span className="byte-bazaar bg-gradient-to-r from-pink-600 via-violet-500 to-cyan-400 bg-clip-text font-semibold text-2xl text-transparent">
+            ByteBazaar
+          </span>, every
+        product is handpicked to ensure quality, performance, and innovation.
+        From smartphones and smartwatches to high-fidelity audio gear and gaming
+        accessories, we curate only the best to match your lifestyle. For us,
+        technology is more than just convenience—it’s about pushing boundaries,
+        making connections, and redefining possibilities.
       </p>
       <p className="text-gray-700 mb-6">
-        Today, <span className="font-semibold text-2xl">sutta.com</span>{" "}
-        continues to grow, but our mission holds steady. We champion quality,
-        celebrate authenticity, and embrace our customers as a vital part of our
-        journey. We are more than a store - we're a place where you belong,
-        where your choices and stories find a home.
+        Today, <span className="byte-bazaar bg-gradient-to-r from-pink-600 via-violet-500 to-cyan-400 bg-clip-text font-semibold text-2xl text-transparent">
+            ByteBazaar
+          </span>{" "}
+        continues to grow, staying committed to delivering the latest and
+        greatest in tech. We believe in quality, authenticity, and a
+        customer-first approach, making sure every interaction with us is as
+        seamless and exciting as the gadgets we offer.
       </p>
       <p className="text-gray-700">
-        Welcome to <span className="font-semibold text-2xl">sutta.com</span> -
-        where every product, every interaction, and every moment is part of the
-        journey we share together.
+        Welcome to <span className="byte-bazaar bg-gradient-to-r from-pink-600 via-violet-500 to-cyan-400 bg-clip-text font-semibold text-2xl text-transparent">
+            ByteBazaar
+          </span>
+        —where technology meets passion, and every product is a step into the
+        future.
       </p>
     </section>
   );

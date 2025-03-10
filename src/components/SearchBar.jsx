@@ -6,7 +6,7 @@ const SearchBar = ({ searchQuery, onSearchChange }) => {
     <div className="relative mb-4">
       <input
         type="text"
-        placeholder="Search cigarettes..."
+        placeholder="Search gadgets..."
         value={searchQuery}
         onChange={(e) => onSearchChange(e.target.value)}
         className="border rounded-lg p-2 w-full"

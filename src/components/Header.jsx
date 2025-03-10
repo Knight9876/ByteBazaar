@@ -70,7 +70,11 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
-            <h1 className="text-3xl text-white font-bold">sutta.com</h1>
+            <h1 className="text-3xl text-white font-bold">
+              <span className="bg-gradient-to-r from-pink-600 via-violet-500 to-cyan-400 bg-clip-text text-transparent">
+                ByteBazaar
+              </span>
+            </h1>
           </div>
 
           <div className="hidden sm:flex items-center space-x-3.5">

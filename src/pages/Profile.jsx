@@ -9,7 +9,6 @@ import { getAuth } from "firebase/auth";
 import { signOut, onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebaseConfig";
 import { useNavigate } from "react-router-dom";
-import { getDatabase, ref, update } from "firebase/database";
 
 const Profile = () => {
   const [user, setUser] = useState({
@@ -75,45 +74,6 @@ const Profile = () => {
         return <AccountDetails />;
     }
   };
-
-  // const uploadToCloudinary = async (photoURL, userId) => {
-  //   const cloudinaryUrl = `https://api.cloudinary.com/v1_1/dlnvozmgw/image/upload`;
-  //   const preset = "oziuwzt4";
-
-  //   try {
-  //     // Fetch the image from the provided photoURL
-  //     const imageResponse = await fetch(photoURL);
-  //     const imageBlob = await imageResponse.blob();
-  
-  //     // Prepare the form data for Cloudinary
-  //     const formData = new FormData();
-  //     formData.append("file", imageBlob);
-  //     formData.append("upload_preset", preset);
-  
-  //     // Upload the image to Cloudinary
-  //     const cloudinaryResponse = await fetch(cloudinaryUrl, {
-  //       method: "POST",
-  //       body: formData,
-  //     });
-  
-  //     const data = await cloudinaryResponse.json();
-  
-  //     // Get the uploaded image URL
-  //     const uploadedImageUrl = data.secure_url;
-  
-  //     console.log("Uploaded Image URL:", uploadedImageUrl);
-  
-  //     // Update the user's profile_pic in Firebase
-  //     const db = getDatabase();
-  //     const userRef = ref(db, `users/${userId}`);
-  //     await update(userRef, { profile_pic: uploadedImageUrl });
-      
-      
-  //     console.log("Profile picture updated successfully!");
-  //   } catch (error) {
-  //     console.error("Error uploading to Cloudinary:", error);
-  //   }
-  // };  
 
   console.log(user);
   
